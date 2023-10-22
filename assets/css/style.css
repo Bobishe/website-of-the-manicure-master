@@ -1,0 +1,225 @@
+@import url("fonts.css");
+
+
+
+
+body{
+    margin: 0; /* Устанавливаем отступы на ноль, чтобы избежать браузерных отступов по умолчанию */
+    padding: 0; /* Устанавливаем поля на ноль */
+}
+
+h1{
+    font-family: vogue;
+    line-height: 1.3;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.text-vogue{
+    font-family: vogue;
+}
+
+.text-times-new-roman{
+    font-family: "Times New Roman";
+}
+
+
+
+
+/*---header------*/
+
+.my_h1{
+    font-family: h1_text;
+    color: rgb(66, 57, 57);
+}
+
+.small_text{
+    font-family: "Times New Roman";
+    font-size: 18px;
+
+}
+
+.small_text_right{
+    position: relative;
+    left: 80px;
+    bottom: 10px;
+    ccolor: rgb(66, 57, 57);
+}
+
+.normal_text{
+    font-family: "Times New Roman";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; /* Толщина подчеркивания */
+    background-color: #ccb8ba; /* Цвет текста ссылки */
+    transition: width 0.3s ease; /* Плавное изменение ширины */
+}
+
+.nav-link:hover::before {
+    width: 100%; /* Подчеркивание от начала до конца текста */
+}
+
+/*---end header---*/
+
+/*-----block 1-----*/
+
+.my_block1_left{
+    height: 45vh;
+}
+
+.my_block1_left a{
+    text-decoration: none;
+    color: rgb(66, 57, 57);
+    font-family: vogue;
+    margin-left: 50%;
+    padding: 20px 40px;
+    font-weight: bold;
+    border: 2px solid #e0cecd!important;
+    margin-top: 100px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.my_block1_left a:hover {
+    background-color: #fae7eb; /* Цвет фона как у текста при наведении */
+    color: rgb(66, 57, 57);
+    border-color: #fae7eb!important;
+}
+
+.width-550{
+    width: 550px;
+}
+
+.my_block1_right {
+    position: relative; /* Для позиционирования псевдоэлемента */
+
+
+
+}
+
+.my_block1_right::before {
+    content: "";
+    position: absolute;
+    top: 30px; /* Регулируйте отступ сверху */
+    left: -20px; /* Регулируйте отступ слева */
+    right: 40px; /* Регулируйте отступ справа */
+    bottom: -30px; /* Регулируйте отступ снизу */
+    border: 2px solid #fae7eb!important; /* Ширина и цвет бордера */
+    transition: border-color 0.3s;
+}
+
+.my_block1_right:hover::before {
+    border-color: rgb(70, 65, 65);
+}
+
+/*---block 2----*/
+
+.my-center-block{
+    font-size: 18px;
+}
+
+/*---block3-----*/
+
+.my_link{
+    text-decoration: none;
+    color: rgb(66, 57, 57);
+    font-family: vogue;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 40px;
+    font-weight: bold;
+    border: 2px solid #fae7eb!important;
+    margin-top: 100px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.my_link:hover {
+    background-color: #fae7eb; /* Цвет фона как у текста при наведении */
+    color: rgb(66, 57, 57);
+    border-color: #fae7eb!important;
+}
+
+/*---block4---*/
+
+
+
+/*---block6---*/
+.my-div{
+    padding: 60px 60px 10px 60px;
+    min-height: 40vh;
+}
+
+
+/*---block7---*/
+.my_link_2{
+    text-decoration: none;
+    color: rgb(66, 57, 57);
+    font-family: vogue;
+    padding: 20px 40px;
+    font-weight: bold;
+    border: 2px solid #fae7eb!important;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px;
+    width: 50%;
+}
+
+.my_link_2:hover {
+    background-color: #fae7eb; /* Цвет фона как у текста при наведении */
+    color: rgb(66, 57, 57);
+    border-color: #fae7eb!important;
+}
+
+.div-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my_block7_right {
+    position: relative; /* Для позиционирования псевдоэлемента */
+}
+
+.my_block7_right::before {
+    content: "";
+    position: absolute;
+    top: 30px; /* Регулируйте отступ сверху */
+    left: -20px; /* Регулируйте отступ слева */
+    right: 180px; /* Регулируйте отступ справа */
+    bottom: -30px; /* Регулируйте отступ снизу */
+    border: 2px solid #fae7eb!important; /* Ширина и цвет бордера */
+    transition: border-color 0.3s;
+}
+
+.my_block7_right:hover::before {
+    border-color: rgb(70, 65, 65);
+}
+
+
+
+.image-overlay {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 40px;
+    width: 76%; /* Ширина равна ширине изображения */
+    height: 100%; /* Высота равна высоте изображения */
+    background-color: rgba(250, 231, 235, 0.4); /* Цвет и прозрачность псевдоэлемента */
+    z-index: 2; /* Чтобы элемент был выше изображения */
+    pointer-events: none; /* Чтобы псевдоэлемент не перехватывал события мыши */
+}
+
+/*---footer---*/
+

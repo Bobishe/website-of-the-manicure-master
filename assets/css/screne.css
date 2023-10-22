@@ -1,0 +1,238 @@
+/*-----меньше 380------*/
+@media screen and (max-width: 385px) {
+    .my_link{
+        padding: 20px 30px!important;
+    }
+}
+
+
+
+
+/*----- Меньше 991 ---------*/
+@media screen and (max-width: 991px) {
+    .my_menu li {
+        max-width: 50%;
+        border: none !important;
+    }
+
+    .my_h1 {
+        font-size: 20px !important;
+    }
+
+    .my_block1_left {
+        padding-top: 17vh;
+    }
+
+    .small_text_right {
+        left: 60px;
+    }
+
+    .my_a {
+        padding-top: 10px;
+    }
+
+    .py-5 {
+        padding-top: 1em !important; /* Используем !important, чтобы переопределить Bootstrap стили */
+        padding-bottom: 1rem !important;
+    }
+
+    .adaptive {
+        width: 100%;
+        height: 100px;
+    }
+
+    .my_block1_right {
+        top: 80px;
+    }
+
+    .col-lg-6.my_block1_right.text-center.mt-5::before {
+        content: "";
+        position: absolute;
+        top: 10px; /* Регулируйте отступ сверху */
+        left: 5px; /* Регулируйте отступ слева */
+        right: 5px; /* Регулируйте отступ справа */
+        bottom: 5px; /* Регулируйте отступ снизу */
+        border: 2px solid #ccb8ba; /* Ширина и цвет бордера */
+        z-index: 9; /* Помещаем псевдоэлемент за картинку */
+        transition: border-color 0.3s;
+    }
+
+
+    /*---block 2----*/
+    .my-center-block {
+        background-color: rgb( 255, 247, 247);
+        padding: 10px 20px 0 30px;
+        width: 80% !important;
+        font-size: 16px;
+        border: 2px solid rgb( 255, 247, 247);
+    }
+
+    .my-border-small {
+        position: relative;
+    }
+
+    .my-border-small::before {
+        content: "";
+        position: absolute;
+        top: 60px; /* Регулируйте отступ сверху */
+        left: -10px; /* Регулируйте отступ слева */
+        right: -10px; /* Регулируйте отступ справа */
+        bottom: 60px; /* Регулируйте отступ снизу */
+        border: 2px solid #fae7eb; /* Ширина и цвет бордера */
+        z-index: 9; /* Помещаем псевдоэлемент за картинку */
+        transition: border-color 0.3s;
+    }
+
+    .my-border-small:hover::before {
+        border-color: #fae7eb;
+    }
+
+    .mt-xs-5 {
+        margin-top: 50px;
+    }
+
+    /*    block 5*/
+    .accordion {
+        width: 100%;
+    }
+
+    .qwer {
+        width: 100%;
+    }
+
+    .my-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px 10px 20px;
+    }
+
+    .my-div img {
+        padding-bottom: 20px;
+    }
+
+    /*    block 7    */
+    .my_link_2 {
+
+        width: 100%;
+        text-align: center;
+    }
+
+    .my_block7_right {
+        margin-top: 50px;
+    }
+
+    .image-overlay {
+        width: 89%; /* Ширина равна ширине изображения */
+    }
+
+    .my_block7_right::before {
+        content: "";
+        position: absolute;
+        top: 30px; /* Регулируйте отступ сверху */
+        left: 10px; /* Регулируйте отступ слева */
+        right: 40px; /* Регулируйте отступ справа */
+        bottom: -30px; /* Регулируйте отступ снизу */
+
+    }
+
+
+/*    footer    */
+    .my-url{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .nails-text{
+        position: absolute;
+
+        top: 30vh;
+        left: 35vw;
+        transform: rotate(90deg);
+        color: black;
+        font-size: 140px;
+        opacity: 0.1;
+    }
+
+
+
+
+}
+
+
+/*----- Больше 991 ---------*/
+@media screen and (min-width: 991px) {
+    .my_menu {
+        padding-left: 10vw;
+    }
+
+    .adaptive {
+        width: 100%;
+        height: 170px;
+    }
+
+    .col-lg-6.my_block1_right.text-center.mt-5 {
+        left: 80px;
+    }
+
+    .my_block1_left {
+        padding-top: 28vh;
+    }
+
+    /*    block 2   */
+    .my_block2_right {
+        position: relative;
+    }
+
+    .my_block2_right::before {
+        content: "";
+        position: absolute;
+        top: 30px;
+        left: -20px;
+        right: 40px;
+        bottom: -30px;
+        border: 2px solid rgb(255, 252, 249);
+        transition: border-color 0.3s;
+        z-index: 1;
+    }
+
+    .my_block2_right.active::before {
+        border-color: #e0cecd;
+    }
+
+    .accordion {
+        width: 75%;
+    }
+
+    .qwer {
+        width: 50%;
+    }
+
+
+    .my-div img {
+        display: block;
+        position: absolute;
+        right: 15vw;
+    }
+
+    .nails-text{
+        position: absolute;
+
+        bottom: 25vh;
+        transform: rotate(90deg);
+        color: black;
+        font-size: 220px;
+        opacity: 0.1;
+    }
+
+
+}
+
+
+/* -----Больше 1300*/
+@media screen and (min-width: 1400px) {
+    .my_menu {
+        padding-left: 20vw;
+    }
+}

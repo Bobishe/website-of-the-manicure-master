@@ -1,0 +1,29 @@
+@font-face {
+    font-family: h1_text; /* Название вашего шрифта */
+    src: url('../fonts/Sensal Regular (RUS by Slavchansky)_0.ttf') format('truetype'); /* Укажите путь к вашему TTF-шрифту */
+    /* Дополнительные свойства для настройки шрифта (например, font-weight и font-style) */
+}
+
+@font-face {
+    font-family: small_text; /* Название вашего шрифта */
+    src: url('../fonts/InterTight-Regular.ttf') format('truetype'); /* Укажите путь к вашему TTF-шрифту */
+    /* Дополнительные свойства для настройки шрифта (например, font-weight и font-style) */
+}
+
+@font-face {
+    font-family: normal_text; /* Название вашего шрифта */
+    src: url('../fonts/EBGaramond08-Regular.otf') format('opentype'); /* Укажите путь к вашему TTF-шрифту */
+    /* Дополнительные свойства для настройки шрифта (например, font-weight и font-style) */
+}
+
+@font-face {
+    font-family: 'vogue italic'; /* Укажите имя шрифта, которое вы хотите использовать */
+    src: url('../fonts/VogueHighlineSerif-MediumItalic.woff2') format('woff2'); /* Укажите путь к файлу шрифта WOFF2 */
+
+}
+
+@font-face {
+    font-family: 'vogue'; /* Укажите имя шрифта, которое вы хотите использовать */
+    src: url('../fonts/VogueHighlineSerif-Medium.woff2') format('woff2'); /* Укажите путь к файлу шрифта WOFF2 */
+
+}
